@@ -31,3 +31,7 @@ variable "PUBLIC_SUBNET_2" {
 variable "PUBLIC_SUBNET_3" {
   default = "10.0.103.0/24"
 }
+variable "ssh_public_key" {
+  description = "SSH public key for EC2"
+  type        = string
+}
