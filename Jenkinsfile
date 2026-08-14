@@ -5,7 +5,7 @@ pipeline {
         // You can update this to your specific credentials ID in Jenkins
         AWS_CREDENTIALS_ID = 'AWS-creds'
         // Define the Terraform variable using TF_VAR_ prefix
-        TF_VAR_ssh_public_key = credentials('ssh-public-key').get()
+        TF_VAR_ssh_public_key = credentials('ssh-public-key')
     }
 
     stages {
